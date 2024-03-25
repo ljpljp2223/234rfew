@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML实现旋转动画</title>
+		<style>
+			.picture{
+        left: 600px;
+        top: 400px;
+				width: 100px;
+				height: 100px;
+				background-color: aquamarine;
+				position: relative;
+				animation: run 3s linear infinite;
+			}
+      @keyframes run{
+				0%{background-color: blue;
+          transform: rotate(0deg) scale(1) translateX(0px);}
+				25%{background-color: black;
+          transform: rotate(360deg) scale(1.5) translateX(100px);}
+        50%{background-color: brown;
+          transform: rotate(1440deg) scale(2) translateX(200px);}
+        75%{background-color: azure;
+          transform: rotate(360deg) scale(1.5) translateX(100px);}
+        100%{background-color: aquamarine;
+          transform: rotate(0deg) scale(1) translateX(0px);}
+		</style>
+	</head>
+	<body>
+		<div class="picture"></div>
+	</body>
+</html>
